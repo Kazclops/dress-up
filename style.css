@@ -10,12 +10,15 @@ body {
 
 #character-container {
     position: relative;
+    width: 250px;   /* Adjust width as per your character's size */
+    height: 400px;  /* Adjust height to match your character's image */
     display: inline-block;
+    overflow: hidden;  /* To prevent items from overflowing the container */
 }
 
 #character-img {
-    width: 250px;
-    height: auto;
+    width: 100%;  /* Make the character image take up the entire container width */
+    height: auto;  /* Ensure it maintains the aspect ratio */
 }
 
 .clothing {
