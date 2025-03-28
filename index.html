@@ -7,68 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <div class="game-area">
-            <div id="background" class="background"></div>
-            <div id="character" class="character"></div>
-
-            <!-- Accessory options -->
-            <div class="options">
-                <div id="hats" class="option">
-                    <h3>Hats</h3>
-                    <button class="hat" onclick="changeItem('hat', 1)">Hat 1</button>
-                    <button class="hat" onclick="changeItem('hat', 2)">Hat 2</button>
-                    <button class="hat" onclick="changeItem('hat', 3)">Hat 3</button>
-                    <button class="hat" onclick="changeItem('hat', 4)">Hat 4</button>
-                    <button class="hat" onclick="changeItem('hat', 5)">Hat 5</button>
-                </div>
-                <div id="shirts" class="option">
-                    <h3>Shirts</h3>
-                    <button class="shirt" onclick="changeItem('shirt', 1)">Shirt 1</button>
-                    <button class="shirt" onclick="changeItem('shirt', 2)">Shirt 2</button>
-                    <button class="shirt" onclick="changeItem('shirt', 3)">Shirt 3</button>
-                    <button class="shirt" onclick="changeItem('shirt', 4)">Shirt 4</button>
-                    <button class="shirt" onclick="changeItem('shirt', 5)">Shirt 5</button>
-                </div>
-                <div id="trousers" class="option">
-                    <h3>Trousers</h3>
-                    <button class="trouser" onclick="changeItem('trouser', 1)">Trouser 1</button>
-                    <button class="trouser" onclick="changeItem('trouser', 2)">Trouser 2</button>
-                    <button class="trouser" onclick="changeItem('trouser', 3)">Trouser 3</button>
-                    <button class="trouser" onclick="changeItem('trouser', 4)">Trouser 4</button>
-                    <button class="trouser" onclick="changeItem('trouser', 5)">Trouser 5</button>
-                </div>
-                <div id="shoes" class="option">
-                    <h3>Shoes</h3>
-                    <button class="shoe" onclick="changeItem('shoe', 1)">Shoe 1</button>
-                    <button class="shoe" onclick="changeItem('shoe', 2)">Shoe 2</button>
-                    <button class="shoe" onclick="changeItem('shoe', 3)">Shoe 3</button>
-                    <button class="shoe" onclick="changeItem('shoe', 4)">Shoe 4</button>
-                    <button class="shoe" onclick="changeItem('shoe', 5)">Shoe 5</button>
-                </div>
-                <div id="crochet-hooks" class="option">
-                    <h3>Crochet Hooks</h3>
-                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 1)">Hook 1</button>
-                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 2)">Hook 2</button>
-                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 3)">Hook 3</button>
-                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 4)">Hook 4</button>
-                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 5)">Hook 5</button>
-                </div>
-                <div id="accessories" class="option">
-                    <h3>Accessories</h3>
-                    <button class="accessory" onclick="changeItem('accessory', 1)">Accessory 1</button>
-                    <button class="accessory" onclick="changeItem('accessory', 2)">Accessory 2</button>
-                    <button class="accessory" onclick="changeItem('accessory', 3)">Accessory 3</button>
-                    <button class="accessory" onclick="changeItem('accessory', 4)">Accessory 4</button>
-                    <button class="accessory" onclick="changeItem('accessory', 5)">Accessory 5</button>
-                </div>
-            </div>
-
-            <div class="controls">
-                <button id="resetButton" onclick="resetItems()">Reset</button>
-                <button id="doneButton" onclick="takeScreenshot()">Done</button>
-            </div>
+    <div id="game-container">
+        <div id="character">
+            <img id="character-img" src="images/character.png" alt="Character">
         </div>
+        <div id="clothes">
+            <!-- Hats -->
+            <img class="hat" src="images/hat1.png" alt="Hat 1" />
+            <img class="hat" src="images/hat2.png" alt="Hat 2" />
+            <!-- Add more hat options here -->
+            <!-- Shirts -->
+            <img class="shirt" src="images/shirt1.png" alt="Shirt 1" />
+            <img class="shirt" src="images/shirt2.png" alt="Shirt 2" />
+            <!-- Add more shirt options here -->
+            <!-- Repeat this pattern for trousers, shoes, etc. -->
+        </div>
+        <button id="reset">Reset</button>
     </div>
 
     <script src="script.js"></script>
