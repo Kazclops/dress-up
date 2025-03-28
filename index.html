@@ -1,92 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Up Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Dress Up Game&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="style.css"&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="game-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="game-area"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="background" class="background"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="character" class="character"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Accessory options --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="options"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="hats" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Hats&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="hat" onclick="changeItem('hat', 1)"&gt;Hat 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="hat" onclick="changeItem('hat', 2)"&gt;Hat 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="hat" onclick="changeItem('hat', 3)"&gt;Hat 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="hat" onclick="changeItem('hat', 4)"&gt;Hat 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="hat" onclick="changeItem('hat', 5)"&gt;Hat 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="shirts" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Shirts&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shirt" onclick="changeItem('shirt', 1)"&gt;Shirt 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shirt" onclick="changeItem('shirt', 2)"&gt;Shirt 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shirt" onclick="changeItem('shirt', 3)"&gt;Shirt 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shirt" onclick="changeItem('shirt', 4)"&gt;Shirt 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shirt" onclick="changeItem('shirt', 5)"&gt;Shirt 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="trousers" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Trousers&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="trouser" onclick="changeItem('trouser', 1)"&gt;Trouser 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="trouser" onclick="changeItem('trouser', 2)"&gt;Trouser 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="trouser" onclick="changeItem('trouser', 3)"&gt;Trouser 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="trouser" onclick="changeItem('trouser', 4)"&gt;Trouser 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="trouser" onclick="changeItem('trouser', 5)"&gt;Trouser 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="shoes" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Shoes&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shoe" onclick="changeItem('shoe', 1)"&gt;Shoe 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shoe" onclick="changeItem('shoe', 2)"&gt;Shoe 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shoe" onclick="changeItem('shoe', 3)"&gt;Shoe 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shoe" onclick="changeItem('shoe', 4)"&gt;Shoe 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="shoe" onclick="changeItem('shoe', 5)"&gt;Shoe 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="crochet-hooks" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Crochet Hooks&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="crochet-hook" onclick="changeItem('crochet-hook', 1)"&gt;Hook 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="crochet-hook" onclick="changeItem('crochet-hook', 2)"&gt;Hook 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="crochet-hook" onclick="changeItem('crochet-hook', 3)"&gt;Hook 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="crochet-hook" onclick="changeItem('crochet-hook', 4)"&gt;Hook 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="crochet-hook" onclick="changeItem('crochet-hook', 5)"&gt;Hook 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="accessories" class="option"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Accessories&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="accessory" onclick="changeItem('accessory', 1)"&gt;Accessory 1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="accessory" onclick="changeItem('accessory', 2)"&gt;Accessory 2&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="accessory" onclick="changeItem('accessory', 3)"&gt;Accessory 3&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="accessory" onclick="changeItem('accessory', 4)"&gt;Accessory 4&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="accessory" onclick="changeItem('accessory', 5)"&gt;Accessory 5&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="controls"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="resetButton" onclick="resetItems()"&gt;Reset&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="doneButton" onclick="takeScreenshot()"&gt;Done&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="game-container">
+        <div class="game-area">
+            <div id="background" class="background"></div>
+            <div id="character" class="character"></div>
+
+            <!-- Accessory options -->
+            <div class="options">
+                <div id="hats" class="option">
+                    <h3>Hats</h3>
+                    <button class="hat" onclick="changeItem('hat', 1)">Hat 1</button>
+                    <button class="hat" onclick="changeItem('hat', 2)">Hat 2</button>
+                    <button class="hat" onclick="changeItem('hat', 3)">Hat 3</button>
+                    <button class="hat" onclick="changeItem('hat', 4)">Hat 4</button>
+                    <button class="hat" onclick="changeItem('hat', 5)">Hat 5</button>
+                </div>
+                <div id="shirts" class="option">
+                    <h3>Shirts</h3>
+                    <button class="shirt" onclick="changeItem('shirt', 1)">Shirt 1</button>
+                    <button class="shirt" onclick="changeItem('shirt', 2)">Shirt 2</button>
+                    <button class="shirt" onclick="changeItem('shirt', 3)">Shirt 3</button>
+                    <button class="shirt" onclick="changeItem('shirt', 4)">Shirt 4</button>
+                    <button class="shirt" onclick="changeItem('shirt', 5)">Shirt 5</button>
+                </div>
+                <div id="trousers" class="option">
+                    <h3>Trousers</h3>
+                    <button class="trouser" onclick="changeItem('trouser', 1)">Trouser 1</button>
+                    <button class="trouser" onclick="changeItem('trouser', 2)">Trouser 2</button>
+                    <button class="trouser" onclick="changeItem('trouser', 3)">Trouser 3</button>
+                    <button class="trouser" onclick="changeItem('trouser', 4)">Trouser 4</button>
+                    <button class="trouser" onclick="changeItem('trouser', 5)">Trouser 5</button>
+                </div>
+                <div id="shoes" class="option">
+                    <h3>Shoes</h3>
+                    <button class="shoe" onclick="changeItem('shoe', 1)">Shoe 1</button>
+                    <button class="shoe" onclick="changeItem('shoe', 2)">Shoe 2</button>
+                    <button class="shoe" onclick="changeItem('shoe', 3)">Shoe 3</button>
+                    <button class="shoe" onclick="changeItem('shoe', 4)">Shoe 4</button>
+                    <button class="shoe" onclick="changeItem('shoe', 5)">Shoe 5</button>
+                </div>
+                <div id="crochet-hooks" class="option">
+                    <h3>Crochet Hooks</h3>
+                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 1)">Hook 1</button>
+                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 2)">Hook 2</button>
+                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 3)">Hook 3</button>
+                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 4)">Hook 4</button>
+                    <button class="crochet-hook" onclick="changeItem('crochet-hook', 5)">Hook 5</button>
+                </div>
+                <div id="accessories" class="option">
+                    <h3>Accessories</h3>
+                    <button class="accessory" onclick="changeItem('accessory', 1)">Accessory 1</button>
+                    <button class="accessory" onclick="changeItem('accessory', 2)">Accessory 2</button>
+                    <button class="accessory" onclick="changeItem('accessory', 3)">Accessory 3</button>
+                    <button class="accessory" onclick="changeItem('accessory', 4)">Accessory 4</button>
+                    <button class="accessory" onclick="changeItem('accessory', 5)">Accessory 5</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="resetButton" onclick="resetItems()">Reset</button>
+                <button id="doneButton" onclick="takeScreenshot()">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
