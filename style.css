@@ -8,9 +8,21 @@ body {
     margin-top: 30px;
 }
 
-#character img {
+#character-container {
+    position: relative;
+    display: inline-block;
+}
+
+#character-img {
     width: 250px;
     height: auto;
+}
+
+.clothing {
+    width: 80px;  /* Adjust the size as needed */
+    height: auto;
+    position: absolute;
+    z-index: 10;
 }
 
 #clothes img {
