@@ -44,7 +44,7 @@ function updateCharacter() {
         hatImg.style.top = '-60px';  // Position above the character head
         hatImg.style.left = '50%';
         hatImg.style.transform = 'translateX(-50%)';
-        hatImg.style.width = '50px';
+        hatImg.style.width = '60px';
         characterContainer.appendChild(hatImg);
     }
 
@@ -86,4 +86,13 @@ function updateCharacter() {
         shoeImg.style.width = '50px';
         characterContainer.appendChild(shoeImg);
     }
+}
+
+// Reset the character to its original state
+function resetGame() {
+    selectedHat = null;
+    selectedShirt = null;
+    selectedTrouser = null;
+    selectedShoe = null;
+    updateCharacter();
 }
