@@ -1,46 +1,55 @@
-/* Overall game container */
-.game-container {
+body, html {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;  /* Distribute space between character and clothes */
-    align-items: flex-start;  /* Align content at the top */
-    height: 100vh;  /* Full viewport height */
-    padding: 20px;  /* Add some padding for spacing */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-/* Left side: Character container */
+/* Main container for the game */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+}
+
+/* Left side - Character */
 .character-container {
     position: relative;
-    width: 50%;  /* Takes up half of the screen */
-    height: 500px;  /* Set a fixed height for the character container */
+    width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    overflow: hidden;  /* To avoid overflowing images */
 }
 
-/* Character image style */
 #character-img {
-    width: 70%;  /* Character image width */
-    max-width: 250px;  /* Limit the character width */
-    object-fit: contain;  /* Ensures the character image does not stretch */
+    width: 60%;
+    max-width: 300px;
 }
 
-/* Right side: Clothing container */
+/* Right side - Clothing options */
 .clothing-container {
-    width: 45%;  /* Takes up 45% of the screen */
+    width: 45%;
     display: flex;
-    flex-direction: column;  /* Align items vertically */
-    gap: 20px;  /* Add space between the clothes options */
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Individual clothing item container */
-.clothing-container div {
-    display: flex;
-    flex-wrap: wrap;  /* Allow the items to wrap if necessary */
-    gap: 10px;  /* Space between items */
+.clothing-item {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-.clothing-container img {
-    width: 50px;  /* Control the size of the clothing items */
-    cursor: pointer;  /* Change cursor to pointer to indicate clickable items */
+.clothing-item:hover {
+    transform: scale(1.1);
+}
+
+/* For each clothing item position, we will use absolute positioning */
+.hat, .shirt, .trouser, .shoe {
+    position: absolute;
 }
