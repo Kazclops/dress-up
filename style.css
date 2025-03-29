@@ -19,7 +19,7 @@ body, html {
 /* Left side - Character */
 .character-container {
     position: relative;
-    width: 50%;
+    width: 75%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -27,8 +27,8 @@ body, html {
 }
 
 #character-img {
-    width: 60%;
-    max-width: 300px;
+    width: 75%;
+    max-width: 500px;
 }
 
 /* Right side - Clothing options */
