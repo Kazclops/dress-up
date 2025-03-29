@@ -12,31 +12,32 @@ body, html {
 .game-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    height: 80%;
+    width: 800px;
+    height: 500px;
+    border: 2px solid #000;
 }
 
 /* Left side - Character */
 .character-container {
     position: relative;
-    width: 75%;
-    height: 100%;
+    width: 400px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
 #character-img {
-    width: 75%;
-    max-width: 500px;
+    width: 70%;  /* Adjust size of character */
 }
 
 /* Right side - Clothing options */
 .clothing-container {
-    width: 45%;
+    width: 380px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
 }
 
 .clothing-item {
@@ -47,6 +48,20 @@ body, html {
 
 .clothing-item:hover {
     transform: scale(1.1);
+}
+
+/* Reset Button */
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #0056b3;
 }
 
 /* For each clothing item position, we will use absolute positioning */
