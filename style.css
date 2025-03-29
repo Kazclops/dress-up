@@ -1,51 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+/* Overall game container */
+.game-container {
+    display: flex;
+    justify-content: space-between;  /* Distribute space between character and clothes */
+    align-items: flex-start;  /* Align content at the top */
+    height: 100vh;  /* Full viewport height */
+    padding: 20px;  /* Add some padding for spacing */
 }
 
-#game-container {
-    margin-top: 30px;
-}
-
-#character-container {
+/* Left side: Character container */
+.character-container {
     position: relative;
-    width: 250px;   /* Adjust width as per your character's size */
-    height: 400px;  /* Adjust height to match your character's image */
-    display: inline-block;
-    overflow: hidden;  /* To prevent items from overflowing the container */
+    width: 50%;  /* Takes up half of the screen */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #character-img {
-    width: 100%;  /* Make the character image take up the entire container width */
-    height: auto;  /* Ensure it maintains the aspect ratio */
+    width: 70%;  /* Adjust the size of the character */
+    max-width: 300px;  /* Max width to avoid too large a character */
 }
 
-.clothing {
-    width: 80px;  /* Adjust the size as needed */
-    height: auto;
-    position: absolute;
-    z-index: 10;
+/* Right side: Clothing container */
+.clothing-container {
+    width: 45%;  /* Takes up 45% of the screen */
+    display: flex;
+    flex-direction: column;  /* Align items vertically */
+    gap: 20px;  /* Add some space between the clothes options */
 }
 
-#clothes img {
-    margin: 10px;
-    cursor: pointer;
-    width: 50px;
-    height: auto;
+/* Individual clothing item container */
+.clothing-container div {
+    display: flex;
+    flex-wrap: wrap;  /* Allow the items to wrap if necessary */
+    gap: 10px;  /* Space between items */
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+.clothing-container img {
+    width: 50px;  /* Control the size of the clothing items */
+    cursor: pointer;  /* Change cursor to pointer to indicate clickable items */
 }
 
-button:hover {
-    background-color: #45a049;
+/* Optional: Styling for active/selected clothing item */
+.clothing-container img.selected {
+    border: 2px solid green;  /* Highlight the selected clothing item */
 }
