@@ -18,10 +18,11 @@
     overflow: hidden;  /* To avoid overflowing images */
 }
 
+/* Character image style */
 #character-img {
-    width: 70%;  /* Set the character image width */
+    width: 70%;  /* Character image width */
     max-width: 250px;  /* Limit the character width */
-    object-fit: contain;  /* Ensure it doesn't stretch */
+    object-fit: contain;  /* Ensures the character image does not stretch */
 }
 
 /* Right side: Clothing container */
@@ -42,9 +43,4 @@
 .clothing-container img {
     width: 50px;  /* Control the size of the clothing items */
     cursor: pointer;  /* Change cursor to pointer to indicate clickable items */
-}
-
-/* Optional: Styling for active/selected clothing item */
-.clothing-container img.selected {
-    border: 2px solid green;  /* Highlight the selected clothing item */
 }
