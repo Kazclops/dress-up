@@ -11,15 +11,17 @@
 .character-container {
     position: relative;
     width: 50%;  /* Takes up half of the screen */
-    height: auto;
+    height: 500px;  /* Set a fixed height for the character container */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    overflow: hidden;  /* To avoid overflowing images */
 }
 
 #character-img {
-    width: 70%;  /* Adjust the size of the character */
-    max-width: 300px;  /* Max width to avoid too large a character */
+    width: 70%;  /* Set the character image width */
+    max-width: 250px;  /* Limit the character width */
+    object-fit: contain;  /* Ensure it doesn't stretch */
 }
 
 /* Right side: Clothing container */
@@ -27,7 +29,7 @@
     width: 45%;  /* Takes up 45% of the screen */
     display: flex;
     flex-direction: column;  /* Align items vertically */
-    gap: 20px;  /* Add some space between the clothes options */
+    gap: 20px;  /* Add space between the clothes options */
 }
 
 /* Individual clothing item container */
