@@ -83,12 +83,12 @@ function updateCharacter() {
         shoeImg.style.bottom = '0';
         shoeImg.style.left = '50%';
         shoeImg.style.transform = 'translateX(-50%)';
-        shoeImg.style.width = '50px';
+        shoeImg.style.width = '70px';
         characterContainer.appendChild(shoeImg);
     }
 }
 
-// Reset the character to its original state
+// Reset the game
 function resetGame() {
     selectedHat = null;
     selectedShirt = null;
