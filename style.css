@@ -25,6 +25,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 #character-img {
@@ -33,17 +34,25 @@ body, html {
 
 /* Right side - Clothing options */
 .clothing-container {
-    width: 380px;
+    width: 400px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.clothing-row {
+    display: flex;
     gap: 10px;
-    padding: 20px;
+    justify-content: center;
 }
 
 .clothing-item {
-    width: 50px;
+    width: 60px;  /* Adjust size of clothing items */
     cursor: pointer;
     transition: transform 0.2s ease;
+    border: 1px solid black;  /* Add 1px black outline */
+    padding: 5px;
 }
 
 .clothing-item:hover {
@@ -58,6 +67,10 @@ body, html {
     color: white;
     border: none;
     cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #reset-btn:hover {
