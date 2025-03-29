@@ -96,3 +96,33 @@ function resetGame() {
     selectedShoe = null;
     updateCharacter();
 }
+
+// Dragging an item
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id); // Store the dragged item ID
+}
+
+// Allow the drop by specifying the event handler for the drop area
+function allowDrop(event) {
+    event.preventDefault(); // Allow the drop
+}
+
+// Handle the drop action and add the clothing to the character
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text"); // Get the dragged item ID
+    var droppedItem = document.getElementById(data);  // Get the dragged element
+
+    // Position the dropped item on the character
+    var characterContainer = document.getElementById("character-container");
+    droppedItem.style.position = "absolute";
+    droppedItem.style.left = (event.clientX - characterContainer.offsetLeft) + "px";  // X position
+    droppedItem.style.top = (event.clientY - characterContainer.offsetTop) + "px";   // Y position
+    characterContainer.appendChild(droppedItem); // Add the item to the character container
+}
+
+// Add event listeners for the drop area (character container)
+const characterContainer = document.getElementById("character-container");
+characterContainer.addEventListener("dragover", allowDrop);
+characterContainer.addEventListener("drop", drop);
+
