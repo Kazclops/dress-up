@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <div class="game-container">
     <!-- Left side: Character container -->
     <div id="character-container" class="character-container">
@@ -6,32 +16,24 @@
 
     <!-- Right side: Clothing options -->
     <div class="clothing-container">
-        <div id="hats">
-            <h4>Hats:</h4>
-            <img class="hat" src="images/hat1.png" alt="Hat 1" onclick="changeHat(0)">
-            <img class="hat" src="images/hat2.png" alt="Hat 2" onclick="changeHat(1)">
-            <img class="hat" src="images/hat3.png" alt="Hat 3" onclick="changeHat(2)">
-        </div>
+        <h3>Hats</h3>
+        <img class="clothing-item" src="images/hat1.png" onclick="changeHat('hat1.png')">
+        <img class="clothing-item" src="images/hat2.png" onclick="changeHat('hat2.png')">
 
-        <div id="shirts">
-            <h4>Shirts:</h4>
-            <img class="shirt" src="images/shirt1.png" alt="Shirt 1" onclick="changeShirt(0)">
-            <img class="shirt" src="images/shirt2.png" alt="Shirt 2" onclick="changeShirt(1)">
-            <img class="shirt" src="images/shirt3.png" alt="Shirt 3" onclick="changeShirt(2)">
-        </div>
+        <h3>Shirts</h3>
+        <img class="clothing-item" src="images/shirt1.png" onclick="changeShirt('shirt1.png')">
+        <img class="clothing-item" src="images/shirt2.png" onclick="changeShirt('shirt2.png')">
 
-        <div id="trousers">
-            <h4>Trousers:</h4>
-            <img class="trouser" src="images/trouser1.png" alt="Trouser 1" onclick="changeTrouser(0)">
-            <img class="trouser" src="images/trouser2.png" alt="Trouser 2" onclick="changeTrouser(1)">
-            <img class="trouser" src="images/trouser3.png" alt="Trouser 3" onclick="changeTrouser(2)">
-        </div>
+        <h3>Trousers</h3>
+        <img class="clothing-item" src="images/trouser1.png" onclick="changeTrouser('trouser1.png')">
+        <img class="clothing-item" src="images/trouser2.png" onclick="changeTrouser('trouser2.png')">
 
-        <div id="shoes">
-            <h4>Shoes:</h4>
-            <img class="shoe" src="images/shoe1.png" alt="Shoe 1" onclick="changeShoe(0)">
-            <img class="shoe" src="images/shoe2.png" alt="Shoe 2" onclick="changeShoe(1)">
-            <img class="shoe" src="images/shoe3.png" alt="Shoe 3" onclick="changeShoe(2)">
-        </div>
+        <h3>Shoes</h3>
+        <img class="clothing-item" src="images/shoe1.png" onclick="changeShoe('shoe1.png')">
+        <img class="clothing-item" src="images/shoe2.png" onclick="changeShoe('shoe2.png')">
     </div>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
